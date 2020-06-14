@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('polices/opensans-regular-webfont.eot');
+  src: url('polices/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('polices/opensans-regular-webfont.woff2') format('woff2'),
+       url('polices/opensans-regular-webfont.woff') format('woff'),
+       url('polices/opensans-regular-webfont.ttf') format('truetype'),
+       url('polices/opensans-regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.container
+{
+   font-family: 'open_sansregular', Arial, 'Times New Roman';
+   font-size: 0.9em;
+   display: flex;
+   flex-direction: row;
+   border: 2px #9E9E9E solid;
+   width:900px;  
+   margin: auto;
+}
+.contenu
+{
+   display: flex;
+   flex-direction: column;
+   width: 70%; 
+} 
+h1 span
+{
+   color: #F7CA07;
+}
+h2 span
+{
+   border-bottom: 2px #F7CA07 solid;
+}
+aside
+{
+   display: flex;
+   flex-direction: column;
+   background-color: #F7CA07;
+   width: 30%;
+}
+.titre
+{
+   display: flex;  
+   align-items: baseline;
+   margin: 20px 30px 0;
+   border-bottom: 2px #F7CA07 solid;
+}
+h1
+{
+   font-size: 2.5em;
+}
+h2
+{
+   font-size: 1.5em;
+   font-weight: bold;
+   margin-left: 30px; 
+}
+.presentation h2
+{
+   margin-left: 0px;
+}
+h3
+{
+   background-color: #404040;
+   font-size: 1.3em;
+   font-weight: bold;
+   color: #F7CA07;
+   text-align: center;    
+}
+h4, h5
+{
+   line-height: 0.5em;
+}
+.presentation
+{
+   margin-left: 30px;
+   margin-top: 20px;
+}
+.presentation img
+{
+   display: none;
+}
+section
+{
+   display: flex;
+   flex-direction: column;
+}
+.portrait
+{
+   text-align: center;
+   height: 15%;
+   margin-right: 20px;
+}
+.contact
+{
+   height: 30%;
+   text-align: center;    
+}
+.contact_infos
+{
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   padding: 0 30px;
+}
+a
+{
+   text-decoration: none;
+}
+a:hover
+{
+   text-decoration: underline;
+}
+.propos
+{
+   height: 45%;
+   margin-top: 10px;
+}
+.propos_texte
+{
+   padding: 0 30px;
+   text-align: justify;
+}
+.loisirs
+{  
+   height: 10%;
+   text-align: center;  
+ }
+.loisirs_fas
+{
+   display: flex;
+   justify-content: space-around;
+}
+.loisirs_fas .fas 
+{
+   border-radius: 100%;
+   border: 1px black solid;
+   padding: 3px;
+}
+ h3 + p
+{
+  padding: 10px;
+}
+.formation
+{
+  display: flex;
+  flex-direction: column;
+}
+.formation_formation1, .experience_formation1
+{
+   display: flex;
+   align-items: baseline;
+}
+.icone
+{
+   margin-left: 30px;
+}
+.date
+{
+   width: 30%;
+   margin-left: 20px;
+   margin-top: 10px;
+}
+.text
+{
+   width: 80%;
+   margin-left: 20px;
+   margin-right: 30px;
+}
+.teteexperience
+{
+   display: flex;
+   flex-direction: row;
+}
+.experience
+{
+   display: flex;
+   flex-direction: column;
+}   
+.experiencetexte
+{
+   margin: 10px;
+   text-align: left;  
+   width: 80%;
+}
+.recommandations
+{
+  display: flex;
+}
+.recommandations_texte
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 50%;  
+   margin-left: 30px;
+   line-height: 1.5;
+  }
+
+@media screen and (max-width: 1024px)
+{
+  .container
+  {
+     width: auto;
+     display: flex;
+     flex-direction: column-reverse;
+  }
+  .contenu
+  {
+     width: auto;
+  }
+  .recommandations
+  {
+     width: auto;
+     display: flex;
+     flex-direction: column;
+   }
+  .recommandations_texte 
+  {
+     text-align: center;
+     width: auto;
+     margin: auto;
+   }
+  aside
+  {
+     width:auto;    
+  }
+  .portrait
+  {
+     display: none;
+  } 
+  .presentation
+  {
+     margin: auto;
+     text-align: center;
+     width: auto;
+  }
+  .presentation img 
+  {
+     display: initial;
+  }
+  .contact_infos
+  {
+     text-align: center;
+  }
+  h1, h2 
+  {
+     text-align: center;
+  }
+  h4, h5 
+  {
+     line-height: normal;
+  }
+  
+}
