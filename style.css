@@ -16,7 +16,8 @@
    display: flex;
    flex-direction: row;
    border: 2px #9E9E9E solid;
-   width:900px;  
+   width:100%;  
+   max-width: 900px;
    margin: auto;
 }
 .contenu
@@ -139,10 +140,6 @@ a:hover
    border: 1px black solid;
    padding: 3px;
 }
- h3 + p
-{
-  padding: 10px;
-}
 .formation
 {
   display: flex;
@@ -199,7 +196,7 @@ a:hover
    line-height: 1.5;
   }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 770px)
 {
   .container
   {
@@ -252,6 +249,18 @@ a:hover
   h4, h5 
   {
      line-height: normal;
+  }
+  .loisirs_fas
+  {
+     padding-bottom: 20px;
+  }
+  .titre
+  {
+     margin: 20px 5px 0;
+  }
+  .icone
+  {
+     margin-left: 5px;
   }
   
 }
